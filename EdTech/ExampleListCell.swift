@@ -4,7 +4,7 @@ protocol YourCellDelegate2: class {
     func didTapButton(_ sender: UIButton)
 }
 
-class ExampleListCell: UITableViewCell {
+class ExampleListCell: UITableViewCell { 
     
     @IBOutlet weak var lblDesc1: UILabel!
     @IBOutlet weak var lblDesc2: UILabel!
