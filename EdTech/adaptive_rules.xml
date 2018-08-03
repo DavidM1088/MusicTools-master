@@ -1,0 +1,42 @@
+<topics>
+    <objects>
+        <interval name="third" distance="4" />
+        <interval name="fifth" distance="7" />
+        <interval name="octave" distance="12" />
+    </objects>
+    
+    <characteristics>
+        <key name="c" />
+        <key name="f" />
+        <register name="soprano" root="60" />
+        <register name="alto" root="60" />
+        <register name="tenor" root="60" />
+        <register name="bass" root="60" />
+        <tempo name="adagio" speed="20" />
+        <tempo name="andante" speed="40" />
+        <tempo name="allegro" speed="20" />
+        <direction name="ascending" dir="0" />
+        <direction name="descending" dir="1" />
+        <staff name="visible">
+        <staff name="not_visible">
+    </characteristics>
+        
+    <config id="1" intervals="major" key="C" register="soprano"
+        tempo="adagio" direction = "ascending" staff = "visible"/>
+    <config id="2" intervals="major" key="C,F,G,D" register="soprano"
+        tempo="adagio" direction = "ascending" staff = "visible"/>
+    <!-- other configs with varying characteristics -->
+    <config id="10" intervals="major" key="C,F,G,D,E"
+        register="soprano,alto,tenor" tempo="adagio,allegro"
+        direction = "ascending,descending" staff = "visible,not_visible"/>
+        
+    <!-- defines how the adaptive paths are specified  -->
+    <adapt_path>
+        <config id="1"/>
+        <criteria pass_percent="100"/>
+        <config id="2"/>
+        <criteria pass_percent="100"/>
+        <config id="10"/>
+    </adapt_path>
+    <topic />
+</topics>
