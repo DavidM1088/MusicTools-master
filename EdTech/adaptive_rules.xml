@@ -18,7 +18,7 @@
         <direction name="ascending" dir="0" />
         <direction name="descending" dir="1" />
         <staff name="visible">
-        <staff name="not_visible">
+        <staff name="not_visible">  
     </characteristics>
         
     <config id="1" intervals="major" key="C" register="soprano"
