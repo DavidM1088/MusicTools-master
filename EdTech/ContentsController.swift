@@ -87,7 +87,7 @@ class ContentsController: UITableViewController, YourCellDelegate1 {
         
         if segue.destination is ExamplesController {
             //let vc = segue.destination as? ExamplesController
-            //vc?.tempos = [0.5]
+            //vc?.tempos = [0.5] //
             //vc?.intervals = [4, 5, 7, 10, 3]
             //vc?.selectedInstrument = 8 //cello 5=electirc guitar
         }
